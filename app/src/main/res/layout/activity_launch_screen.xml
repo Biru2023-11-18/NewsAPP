@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/launch_screen"
+android:background="@color/black"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Screens.Launch_Screen">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="260dp"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/launch"
+        android:elevation="8dp"
+        android:padding="4dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="7dp"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.05"
+        android:shadowColor="#80000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2" />
+
+
+    <ProgressBar
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:indeterminateTint="@color/white" />
+
+</LinearLayout>
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="center"
+    android:layout_marginBottom="30dp"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    android:text="Developed for android 开发课"
+    android:alpha="0.8"
+    android:letterSpacing="0.03" />
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:fitsSystemWindows="true"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/SignUp_Screen"
+android:padding="24dp"
+android:fillViewport="true"
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Screens.SignUp_Screen">
+<LinearLayout
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Your Account"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your details to Sign Up"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email..."
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Confirm Password field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Terms checkbox -->
+    <CheckBox
+        android:id="@+id/cbTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/i_accept_the_terms_conditions"
+        android:layout_marginBottom="24dp"/>
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-20dp"
+        android:backgroundTint="#1A73E8"
+        android:textSize="16sp"
+        android:layout_marginBottom="17dp"/>
+    <TextView
+        android:id="@+id/loginNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have Account? Go Login"
+        android:textColor="#666666"
+        android:layout_marginBottom="24dp"/>
+
+
+    <!-- OR divider -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textColor="#666666"
+            android:background="#FFFFFF"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="58dp">
+        <Button
+            android:id="@+id/btn_wechat_login"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:drawableLeft="@drawable/wechat"
+            android:text="Login with WeChat" />
+
+        <Button
+            android:id="@+id/btn_qq_login"
+            android:layout_width="154dp"
+
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/qq"
+            android:text="Login with QQ" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

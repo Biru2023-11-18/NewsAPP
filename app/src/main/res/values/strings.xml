@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">News APP</string>
+    <string name="welcome">Welcome to News App</string>
+    <string name="subtitle">一个应用，所有新闻。</string>
+    <string name="i_accept_the_terms_conditions">I accept the terms and conditions</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">我的</string>
+    <string name="bookmark">书签\n</string>
+    <string name="search">Search\n</string>
+    <string name="notification">Notification</string>
+    <string name="aboutus">本应用是为 2025 年安卓开发课程 而开发的。它旨在帮助用户了解世界各地正在发生的事件。通过本应用，你可以轻松获取最新新闻、更新和来自不同来源的故事，全部集中在一个地方。</string>
+    <string name="about_title">About APP\n</string>
+    <string name="profile_picture">Profile_picture\n</string>
+
+    <style name="Close">close</style>
+
+</resources>
